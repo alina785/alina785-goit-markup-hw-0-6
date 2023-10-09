@@ -78,17 +78,25 @@ img {
 
 .container {
     /* width: 1158px; */
-    max-width: 320px;
+    min-width: 320px;
+    width: 100%;
+
     /* padding: 0 15px; */
-    padding: 0 16px;
-    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
     /* padding-top: 120px; */
-    padding-top: 96px;
     /* padding-bottom: 120px; */
-    padding-bottom: 96px;
+
+    /*padding-bottom: 96px;
+    padding-top: 96px;*/
+    
+    padding: 96px 0;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -116,12 +124,17 @@ img {
 
 .header .container {
     display: flex;
+    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 
 .header-logo {
@@ -194,7 +207,7 @@ img {
 
 .address-list {
     /*display: flex;
-    gap: 40px;*/
+    /*gap: 40px;*/
     line-height: 1.5;
     letter-spacing: 0.02em;
     display: none;
@@ -248,7 +261,7 @@ img {
     /*line-height: 1.07;*/
     letter-spacing: 0.02em;
     /*max-width: 496px;*/
-    max-width: 224px;
+    max-width: 217px;
     margin: 0 auto;
 }
 
@@ -327,6 +340,10 @@ img {
     padding-bottom: 96px;
 }
 
+.team-container {
+    width: 296px;
+}
+
 .team-title {
     color: var(--color-navy-blue);
     line-height: 1.11;
@@ -353,7 +370,7 @@ img {
 
 .product-designer img {
     max-width: 100%;
-    margin: 0 auto;
+    
 }
 
 .team-text {
@@ -1088,7 +1105,7 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
-        padding-left: 108px;
+        width: 584px;
     }
 
     .footer-logo {
@@ -1126,13 +1143,21 @@ img {
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1128px;
+        max-width: 1158px;
+        width: 1158px;
         padding: 0 15px;
     }
 
     .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding: 120px 0;
+    }
+
+    .header {
+        max-width: 1158px;
+    }
+
+    .header .container {
+        justify-content: space-between;
     }
 
     .header-logo {
