@@ -345,6 +345,8 @@ img {
     padding: 96px 0;
 }
 
+
+
 .team-title {
     font-size: 36px;
     color: var(--color-navy-blue);
@@ -1016,7 +1018,11 @@ img {
     }
     
 }
-
+@media screen and (max-width: 767px) {
+    .team-container {
+            width: 296px;
+        }
+}
 /* Tablet */
 
 @media screen and (min-width: 768px) {
@@ -1191,6 +1197,11 @@ img {
         gap: 40px;
     }
 
+         .contacts-link {
+             font-size: 16px;
+    
+         }
+
     .hero-section {
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -1301,7 +1312,7 @@ img {
 
 @media screen and (min-width: 1158px) {
     .picture-portfolio {
-        width: 360px;
         height: 300px;
+        width: 360px;
     }
 }
